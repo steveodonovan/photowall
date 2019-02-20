@@ -7,7 +7,7 @@ class Comments extends Component{
 		this.handleSubmit = this.handleSubmit.bind(this)
 	}
 
-	handleSubmit(event){
+	handleSubmit = (event) =>{
 		event.preventDefault()
 		const comment = event.target.elements.comment.value
 		this.props.addComment(comment, this.props.id)
